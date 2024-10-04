@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .nav{
+            display: flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .navlis{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .navlis1{
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        .but{
+            padding: 8px 15px 8px 15px;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <h2><a class="link" href="/home">Virtue</a></h2>
+        </div>
+        <div class="navlis">
+            <div class="navlis1">
+                <a class="link" href="/joinAsGuest">Join as guest</a>
+            </div>
+            <div class="navlis1">
+                <a class="link" href="/register">Register</a>
+            </div>
+            <div class="navlis1">
+                <a class="link" href="/login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form method="get" action="/auth">
+            <button class="but">Get Start</button>
+        </form>
+    </div>
+</body>
+</html>
